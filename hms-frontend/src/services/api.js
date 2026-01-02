@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // 1. Create the Axios instance
 const api = axios.create({
-  baseURL: 'http://localhost:5000', // Points to your Node backend
+  baseURL: 'https://hospital-management-system-nnaw.onrender.com', // Points to your Node backend
   headers: {
     'Content-Type': 'application/json',
   },
