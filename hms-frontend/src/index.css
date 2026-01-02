@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-900 text-slate-200 antialiased;
+}
+
+/* Global Dark Mode Overrides for Components */
+.bg-white {
+  @apply bg-slate-800 border border-slate-700 !important;
+}
+
+/* Fix text colors on dark backgrounds */
+.text-slate-900 {
+  @apply text-white !important;
+}
+
+.text-slate-600,
+.text-slate-700 {
+  @apply text-slate-400 !important;
+}
+
+/* Dark Input Fields */
+input,
+select {
+  @apply bg-slate-900 border-slate-700 text-white placeholder-slate-500 !important;
+}
+
+/* Focus states for Teal Theme */
+input:focus,
+select:focus {
+  @apply ring-medical-primary border-medical-primary !important;
+}
