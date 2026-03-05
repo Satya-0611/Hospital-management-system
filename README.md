@@ -53,5 +53,34 @@ Follow these steps to run the project locally on your machine.
 
 ### 1. Clone the Repository
 ```bash
-git clone (https://github.com/Satya-0611/Hospital-management-system)
+1. git clone (https://github.com/Satya-0611/Hospital-management-system)
 cd hospital-management-system
+2. Backend Setup
+Bash
+cd hms-backend
+npm install
+Create a .env file in the hms-backend folder:
+
+Code snippet
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_super_secret_key
+Start the Server:
+
+Bash
+npm start
+3. Frontend Setup
+Open a new terminal.
+
+Bash
+cd hms-frontend
+npm install
+Configure API URL:
+Go to src/api.js (or wherever your Axios instance is) and ensure the baseURL is set to localhost:
+
+JavaScript
+baseURL: 'http://localhost:5000/api'
+Start the Client:
+
+Bash
+npm run dev
