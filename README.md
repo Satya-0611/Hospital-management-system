@@ -53,5 +53,5 @@ Follow these steps to run the project locally on your machine.
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/YOUR_USERNAME/hospital-management-system.git](https://github.com/YOUR_USERNAME/hospital-management-system.git)
+git clone (https://github.com/Satya-0611/Hospital-management-system)
 cd hospital-management-system
