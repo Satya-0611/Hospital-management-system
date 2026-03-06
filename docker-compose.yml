@@ -1,0 +1,16 @@
+services:
+  frontend:
+    build:
+      context: ./hms-frontend
+    image: hms-frontend
+    ports:
+      - "5173:5173"
+
+  backend:
+    build:
+      context: ./hms-backend
+    image: hms-backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./hms-backend/.env
